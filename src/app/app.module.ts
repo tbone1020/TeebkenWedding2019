@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
+import { HimHerBioComponent } from './about/him-her-bio/him-her-bio.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NavigationComponent } from './header/navigation/navigation.component';
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    NavigationComponent
+    NavigationComponent,
+    HimHerBioComponent
   ],
   imports: [
     BrowserModule

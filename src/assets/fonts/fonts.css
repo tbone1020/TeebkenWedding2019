@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'MicrosoftYiBaiti';
+    src: url('Microsoft-Yi-Baiti.eot');
+    src: url('Microsoft-Yi-Baiti.eot?#iefix') format('embedded-opentype'),
+        url('Microsoft-Yi-Baiti.woff2') format('woff2'),
+        url('Microsoft-Yi-Baiti.woff') format('woff'),
+        url('Microsoft-Yi-Baiti.ttf') format('truetype'),
+        url('Microsoft-Yi-Baiti.svg#Microsoft-Yi-Baiti') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LOVES';
+    src: url('LOVES-REG.eot');
+    src: url('LOVES-REG.eot?#iefix') format('embedded-opentype'),
+        url('LOVES-REG.woff2') format('woff2'),
+        url('LOVES-REG.woff') format('woff'),
+        url('LOVES-REG.ttf') format('truetype'),
+        url('LOVES-REG.svg#LOVES-REG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oh_Samantha';
+    src: url('OhSamantha.eot');
+    src: url('OhSamantha.eot?#iefix') format('embedded-opentype'),
+        url('OhSamantha.woff2') format('woff2'),
+        url('OhSamantha.woff') format('woff'),
+        url('OhSamantha.ttf') format('truetype'),
+        url('OhSamantha.svg#OhSamantha') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

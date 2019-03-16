@@ -1,0 +1,22 @@
+nav {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  font-size: 23px;
+}
+
+.nav__list-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.nav__list-item a {
+  color: white;
+  text-decoration: none;
+}

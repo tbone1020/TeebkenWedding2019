@@ -1,0 +1,35 @@
+header {
+  background-image: url('/assets/images/hero-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.header__line,
+.header__liner {
+  display: inline-block;
+  vertical-align: middle;  
+}
+.header__line {
+  border-bottom: 1px solid white;
+  height: 2px;
+  width: 20%;  
+}
+.header__title {
+  font-family: 'LOVES';
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.header__sub-title {
+  font-family: 'Oh_Samantha';
+  font-size: 35px;
+}
+
+
