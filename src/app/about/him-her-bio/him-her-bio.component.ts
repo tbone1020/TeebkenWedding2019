@@ -6,18 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./him-her-bio.component.css']
 })
 export class HimHerBioComponent implements OnInit {
-
+  @Input() selfImagePath: string;
   @Input() name: string;
   @Input() job: string;
-  @Input() hobbies: string;
-  
+  @Input() likes: string;
+  @Input() spiritAnimal: string;
 
-  constructor() {
+  constructor() {}
 
-  }
-
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
 }
