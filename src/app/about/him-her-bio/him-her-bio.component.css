@@ -1,20 +1,49 @@
 .bride-groom {
   text-align: center;
+  padding-bottom: 40px;
 }
+
 .bride-groom__img {
-  width: 350px;
-  margin: auto;
+  max-width: 450px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  text-align: center;
 }
+
 .bride-groom__img img {
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
+
 .bride-groom__name {
   font-family: 'LOVES';
-  font-size: 40px;
+  padding: 15px 0 10px;
   text-transform: uppercase;
+  font-size: 30px;
   letter-spacing: 2px;
 }
+
 .bride-groom__information {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
+
+@media screen and (min-width: 769px) {
+  .bride-groom {
+    padding-bottom: 0;
+  }
+  .bride-groom__name {
+    font-size: 40px;
+  }
+  .bride-groom__information {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
 
 }

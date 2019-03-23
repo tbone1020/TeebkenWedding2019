@@ -9,6 +9,22 @@ header {
   position: relative;
 }
 
+header:after {
+  content: '';
+  background: rgb(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.header__wrapper {
+  position: relative;
+  z-index: 9;
+}
 .header__line,
 .header__liner {
   display: inline-block;
@@ -30,6 +46,10 @@ header {
 .header__sub-title {
   font-family: 'Oh_Samantha';
   font-size: 35px;
+}
+
+@media screen (min-width: 769px) {
+
 }
 
 

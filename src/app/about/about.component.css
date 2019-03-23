@@ -1,5 +1,14 @@
-.about-bride-groom {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.bride-groom {
+  padding-bottom: 40px;
   padding: 40px 0;
+} 
+
+
+@media screen and (min-width: 769px) {
+  .bride-groom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin:0 auto;
+  } 
 }
