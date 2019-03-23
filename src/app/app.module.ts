@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { HimHerBioComponent } from './about/him-her-bio/him-her-bio.component';
+import { OurStoryComponent } from './our-story/our-story.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HimHerBioComponent } from './about/him-her-bio/him-her-bio.component';
     HeaderComponent,
     AboutComponent,
     NavigationComponent,
-    HimHerBioComponent
+    HimHerBioComponent,
+    OurStoryComponent
   ],
   imports: [
     BrowserModule
