@@ -1,0 +1,34 @@
+.big-date {
+  background-image: url('/assets/images/Ebell-Image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "LOVES";
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.big-date:before {
+  content: '';
+  background: #464943;
+  background: rgba(70, 73, 67, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.big-date__header,
+.big-date__date-time {
+  position: relative;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+@media screen and (min-width: 769px) {
+  .big-date__header,
+  .big-date__date-time {
+    font-size: 60px;
+  }
+}

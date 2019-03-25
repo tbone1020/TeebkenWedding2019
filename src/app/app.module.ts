@@ -11,6 +11,7 @@ import { OurStoryComponent } from './our-story/our-story.component';
 import { OurStoryDividerComponent } from './our-story/our-story-divider/our-story-divider.component';
 import { StoriesComponent } from './our-story/stories/stories.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { DateComponent } from './date/date.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CountdownComponent } from './countdown/countdown.component';
     OurStoryComponent,
     OurStoryDividerComponent,
     StoriesComponent,
-    CountdownComponent
+    CountdownComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule
