@@ -1,5 +1,6 @@
 .stories {
   padding: 0 25px 10px;
+  position: relative;
 }
   
 .stories__header {
@@ -12,6 +13,34 @@
 }
 .stories__text {
   line-height: 20px;
+}
+.our-story--left-lean:before {
+  content: "from him";
+  left: 15px;
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+.our-story--right-lean:after {
+  content: "from her";
+  right: 15px;
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.our-story--left-lean:before,
+.our-story--right-lean:after {
+  font-family: 'Oh_Samantha';
+  border: 1px solid #353434;
+  padding: 10px;
+  position: absolute;
+  font-size: 26px;
+  top: -50px;
 }
 
 @media screen and (min-width: 769px) {

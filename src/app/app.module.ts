@@ -10,6 +10,7 @@ import { HimHerBioComponent } from './about/him-her-bio/him-her-bio.component';
 import { OurStoryComponent } from './our-story/our-story.component';
 import { OurStoryDividerComponent } from './our-story/our-story-divider/our-story-divider.component';
 import { StoriesComponent } from './our-story/stories/stories.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { StoriesComponent } from './our-story/stories/stories.component';
     HimHerBioComponent,
     OurStoryComponent,
     OurStoryDividerComponent,
-    StoriesComponent
+    StoriesComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule
