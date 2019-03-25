@@ -1,0 +1,28 @@
+.stories {
+  padding: 0 25px 10px;
+}
+  
+.stories__header {
+  text-transform: uppercase;
+  font-family: 'LOVES';
+  color: #353434;
+  font-size: 45px;
+  padding: 0 0 15px;
+  letter-spacing: 3px;
+}
+.stories__text {
+  line-height: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  
+  .stories__header {
+    font-size: 40px;
+  }
+  .stories__text {
+    font-size: 20px;
+  }
+  .our-story--left-border {
+    border-left: 1px solid black;
+  }
+}

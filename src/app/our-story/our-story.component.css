@@ -1,0 +1,13 @@
+.our-story__wrapper {
+  display: grid;
+  max-width: 960px;
+  margin: 35px auto 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .our-story__wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15px;
+  }
+}

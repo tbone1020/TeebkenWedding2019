@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { HimHerBioComponent } from './about/him-her-bio/him-her-bio.component';
 import { OurStoryComponent } from './our-story/our-story.component';
+import { OurStoryDividerComponent } from './our-story/our-story-divider/our-story-divider.component';
+import { StoriesComponent } from './our-story/stories/stories.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { OurStoryComponent } from './our-story/our-story.component';
     AboutComponent,
     NavigationComponent,
     HimHerBioComponent,
-    OurStoryComponent
+    OurStoryComponent,
+    OurStoryDividerComponent,
+    StoriesComponent
   ],
   imports: [
     BrowserModule
