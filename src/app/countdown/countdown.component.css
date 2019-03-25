@@ -1,0 +1,30 @@
+.countdown {
+  display: grid;
+  color: black;
+  background: #bdc3b7;
+  height: 200px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
+.countdown__time {
+  font-family: 'LOVES';
+  letter-spacing: -6px;
+  font-size: 80px;
+}
+.countdown__unit {
+  font-size: 26px;
+}
+.countdown__days,
+.countdown__hours,
+.countdown__minutes,
+.countdown__seconds {
+  align-self: center;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .countdown {
+
+  }
+}
