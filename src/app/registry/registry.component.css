@@ -1,0 +1,35 @@
+.registry {
+  padding: 50px 0;
+  text-align: center;
+}
+.registry__header {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "LOVES";
+}
+.registry__text {
+  width: 90%;
+  margin: auto;
+  line-height: 25px;
+  padding: 25px 0 0;
+}
+.registry__img {
+  max-width: 230px;
+  margin: 30px 0 0;
+}
+
+@media screen and (min-width: 769px) {
+  .registry {
+    padding: 50px 0 90px;
+  }
+  .registry__header {
+    font-size: 60px;
+  }
+  .registry__text {
+    max-width: 530px;
+  }
+  .registry__img {
+    margin: 60px 0 0;
+    max-width: 330px;
+  }
+}

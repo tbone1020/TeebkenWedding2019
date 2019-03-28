@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   selector: 'app-addresses',
   templateUrl: './addresses.component.html',
   styleUrls: ['./addresses.component.css'],
-  encapsulation: ViewEncapsulation.None;
+  encapsulation: ViewEncapsulation.None
 })
 export class AddressesComponent implements OnInit {
 
