@@ -16,6 +16,8 @@ import { WeddingDetailsComponent } from './wedding-details/wedding-details.compo
 import { AddressesComponent } from './wedding-details/addresses/addresses.component';
 import { WeddingPartyComponent } from './wedding-party/wedding-party.component';
 import { RegistryComponent } from './registry/registry.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactDetailsComponent } from './footer/contact-details/contact-details.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { RegistryComponent } from './registry/registry.component';
     WeddingDetailsComponent,
     AddressesComponent,
     WeddingPartyComponent,
-    RegistryComponent
+    RegistryComponent,
+    FooterComponent,
+    ContactDetailsComponent
   ],
   imports: [
     BrowserModule
