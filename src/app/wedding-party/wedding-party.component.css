@@ -1,0 +1,12 @@
+.wedding-party {
+  background: #cdd3c8;
+  padding: 50px 0;
+}
+
+.wedding-party__header {
+  text-align: center;
+  font-family: "LOVES";
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #010100;
+}

@@ -14,6 +14,8 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { DateComponent } from './date/date.component';
 import { WeddingDetailsComponent } from './wedding-details/wedding-details.component';
 import { AddressesComponent } from './wedding-details/addresses/addresses.component';
+import { WeddingPartyComponent } from './wedding-party/wedding-party.component';
+import { RegistryComponent } from './registry/registry.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { AddressesComponent } from './wedding-details/addresses/addresses.compon
     CountdownComponent,
     DateComponent,
     WeddingDetailsComponent,
-    AddressesComponent
+    AddressesComponent,
+    WeddingPartyComponent,
+    RegistryComponent
   ],
   imports: [
     BrowserModule
