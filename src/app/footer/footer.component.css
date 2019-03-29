@@ -1,9 +1,17 @@
 .footer {
   background: #464943;
-  display: grid;
   color: white;
+  padding: 40px 0 0;
 }
 
 .footer__wrapper {
+  display: grid;
   border-top: 1px solid white;
+  width: 90%;
+  padding: 30px 0 0;
+  margin: 0 auto;
+}
+
+.footer__multi-images {
+  display: grid;
 }
