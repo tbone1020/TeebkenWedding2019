@@ -18,6 +18,7 @@ import { WeddingPartyComponent } from './wedding-party/wedding-party.component';
 import { RegistryComponent } from './registry/registry.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactDetailsComponent } from './footer/contact-details/contact-details.component';
+import { FooterImageComponent } from './footer/footer-image/footer-image.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ContactDetailsComponent } from './footer/contact-details/contact-detail
     WeddingPartyComponent,
     RegistryComponent,
     FooterComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
+    FooterImageComponent
   ],
   imports: [
     BrowserModule
