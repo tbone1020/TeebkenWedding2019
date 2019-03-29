@@ -1,3 +1,5 @@
-<p>
-  footer-image works!
-</p>
+<figure class="footer__image-wrapper">
+  <figcaption *ngIf="position === top" class="footer__image-text">{{ text }}</figcaption>
+  <img src="/assets/images/{{ imagePath }}" alt="" class="footer__image">
+  <figcaption *ngIf="position === bottom" class="footer__image-text">{{ text }}</figcaption>
+</figure>
