@@ -1,14 +1,22 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-footer-image',
   templateUrl: './footer-image.component.html',
   styleUrls: ['./footer-image.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class FooterImageComponent implements OnInit {
 
-  constructor() { }
+  @Input() imagePath: string;
+  @Input() text: string;
+  @Input() position: string;
+  @Input() modifier: string
+  @Input() width: number;
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

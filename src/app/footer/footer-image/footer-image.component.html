@@ -1,5 +1,5 @@
-<figure class="footer__image-wrapper">
-  <figcaption *ngIf="position === top" class="footer__image-text">{{ text }}</figcaption>
-  <img src="/assets/images/{{ imagePath }}" alt="" class="footer__image">
-  <figcaption *ngIf="position === bottom" class="footer__image-text">{{ text }}</figcaption>
+<figure class="footer__image-wrap {{ modifier }}">
+  <figcaption [ngClass]="(position=='top')?'footer--show-text footer__image-text' : 'footer__image-text' ">{{ text }}</figcaption>
+  <img src="/assets/images/{{ imagePath }}" alt="{{ text }}" width="{{ width }}" class="footer__image">
+  <figcaption [ngClass]="(position=='bottom')?'footer--show-text footer__image-text' : 'footer__image-text' ">{{ text }}</figcaption>
 </figure>
