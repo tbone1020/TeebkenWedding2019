@@ -1,8 +1,20 @@
 .contact-details {
-
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 0 50px;
+  letter-spacing: 1px;
 }
 
 .contact-details__social-media-link {
   color: white;
+  padding-right: 5px;
   text-decoration: none;
+}
+
+.contact-details__social-media {
+  padding-top: 10px;
+}
+
+.contact-details__icon {
+  font-size: 23px;
 }
