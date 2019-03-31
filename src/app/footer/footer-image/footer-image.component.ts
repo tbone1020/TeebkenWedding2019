@@ -8,12 +8,6 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 export class FooterImageComponent implements OnInit {
 
-  @Input() imagePath: string;
-  @Input() text: string;
-  @Input() position: string;
-  @Input() modifier: string
-  @Input() width: number;
-
   constructor() {
 
   }

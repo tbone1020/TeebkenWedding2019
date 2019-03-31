@@ -1,5 +1,15 @@
-<figure class="footer__image-wrap {{ modifier }}">
-  <figcaption [ngClass]="(position=='top')?'footer--show-text footer__image-text' : 'footer__image-text' ">{{ text }}</figcaption>
-  <img src="/assets/images/{{ imagePath }}" alt="{{ text }}" width="{{ width }}" class="footer__image">
-  <figcaption [ngClass]="(position=='bottom')?'footer--show-text footer__image-text' : 'footer__image-text' ">{{ text }}</figcaption>
-</figure>
+<div class="footer__images-wrapper">
+  <figure class="footer__image-wrap footer__images--fuji">
+    <figcaption class ="footer__image-text footer__image-text--align-right" >MT. FUJI, JAPAN</figcaption>
+    <img src="/assets/images/Mt-Fuji-Pic.png"class="footer__image footer__image--fuji">
+  </figure>
+  <figure class="footer__image-wrap footer__images--oahu">
+    <figcaption class ="footer__image-text footer__image-text--align-right footer__image-text--right-padding" >OAHU, HI</figcaption>
+    <img src="/assets/images/Hawaii-Pic.png"class="footer__image footer__image--oahu">
+  </figure>
+  <figure class="footer__image-wrap footer__images--mx">
+    <figcaption class ="footer__image-text footer__image-text--show-mobile" >COZUMEL, MX</figcaption>
+    <img src="/assets/images/Cozumel-Pic.png"class="footer__image footer__image--mx">
+    <figcaption class ="footer__image-text footer__image-text--show-desktop" >COZUMEL, MX</figcaption>
+  </figure>
+</div>

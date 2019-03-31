@@ -1,7 +1,105 @@
 .footer__image-text {
-  display: none;
   padding: 5px 0;
+  text-align: left;
 }
+
 .footer--show-text {
   display: block;
+}
+
+
+.footer__image {
+  width: 100%;
+}
+
+.footer__images-wrapper {
+  display: grid;
+  grid-column-gap: 15px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__image-text--show-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .footer__images-wrapper {
+    border-left: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: right;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    margin-top: -110px;
+    align-items: center;
+    padding: 20px;
+    grid-template:
+      "fuji oahu"
+      "fuji mx";
+  }
+  
+  .footer__image-text--align-right {
+    text-align: right;
+  }
+  .footer__image-text--show-desktop {
+    display: block;
+  }
+  .footer__image-text--show-mobile {
+    display: none;
+  }
+  .footer__images--fuji {
+    grid-area: fuji;
+  }
+
+  .footer__images--oahu {
+    grid-area: oahu;
+    text-align: left;
+  }
+
+  .footer__images--mx {
+    grid-area: mx;
+    text-align: left;
+  }
+
+  .footer__image--fuji {
+    width: 210px;
+  }
+
+  .footer__image--oahu {
+    width: 180px;
+  }
+
+  .footer__image--mx {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  .footer__image--fuji {
+    width: 250px;
+  }
+
+  .footer__image--oahu {
+    width: 220px;
+  }
+
+  .footer__image--mx {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .footer__image--fuji {
+    width: 300px;
+  }
+
+  .footer__image--oahu {
+    width: 270px;
+  }
+
+  .footer__image--mx {
+    width: 230px;
+  }
 }
