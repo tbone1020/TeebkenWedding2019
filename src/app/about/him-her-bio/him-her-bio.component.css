@@ -3,14 +3,14 @@
   padding-bottom: 40px;
 }
 
-.bride-groom__img {
+.bride-groom__img-wrapper {
   max-width: 450px;
   margin: 0 auto;
   padding-bottom: 15px;
   text-align: center;
 }
 
-.bride-groom__img img {
+.bride-groom__img {
   width: 90%;
   height: 100%;
 }

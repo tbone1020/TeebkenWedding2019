@@ -1,12 +1,17 @@
 .countdown {
-  display: grid;
   color: black;
   background: #bdc3b7;
   height: 200px;
   width: 100%;
+}
+.countdown__wrapper {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   justify-items: center;
+  height: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 .countdown__time {
   font-family: 'LOVES';
@@ -16,10 +21,7 @@
 .countdown__unit {
   font-size: 26px;
 }
-.countdown__days,
-.countdown__hours,
-.countdown__minutes,
-.countdown__seconds {
+.countdown__time-wrapper {
   align-self: center;
   text-align: center;
 }
