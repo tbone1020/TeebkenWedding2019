@@ -6,7 +6,6 @@
 
 .footer__wrapper {
   display: grid;
-  border-top: 1px solid white;
   width: 90%;
   padding: 35px 0 0;
   margin: 0 auto;
@@ -23,7 +22,9 @@
 
 
 @media screen and (min-width: 769px) {
+
   .footer__wrapper {
+    border-top: 1px solid white;
     grid-template-columns: 38% 62%;
   }
   .footer__design-built {

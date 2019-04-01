@@ -1,5 +1,5 @@
 .stories {
-  padding: 0 25px 10px;
+  padding: 0 0 100px;
   position: relative;
 }
   
@@ -7,8 +7,8 @@
   text-transform: uppercase;
   font-family: 'LOVES';
   color: #353434;
-  font-size: 45px;
-  padding: 0 0 15px;
+  font-size: 33px;
+  padding: 20px 0 15px;
   letter-spacing: 3px;
 }
 .stories__text {
@@ -16,21 +16,15 @@
 }
 .our-story--left-lean:before {
   content: "from him";
-  left: 15px;
-  -moz-transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-  -o-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
 }
 .our-story--right-lean:after {
   content: "from her";
-  right: 15px;
-  -moz-transform: rotate(30deg);
-  -webkit-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
+}
+
+.our-story--left-lean:before,
+.our-story--right-lean:after {
+  left: 50%;
+  margin-left: -58px;
 }
 
 .our-story--left-lean:before,
@@ -44,7 +38,31 @@
 }
 
 @media screen and (min-width: 769px) {
-  
+  .stories {
+    padding: 0 25px 20px;
+    margin-bottom: 50px;
+  }
+  .our-story--left-lean:before {
+    left: 45px;
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  .our-story--right-lean:after {
+    right: 15px;
+    left: auto;
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  .our-story--left-lean:before,
+  .our-story--right-lean:after {
+    top: -20px;
+  }
   .stories__header {
     font-size: 40px;
   }
