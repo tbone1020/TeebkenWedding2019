@@ -4,7 +4,7 @@
 }
 
 .bride-groom__img-wrapper {
-  max-width: 450px;
+  max-width: 300px;
   margin: 0 auto;
   padding-bottom: 15px;
   text-align: center;
@@ -33,6 +33,9 @@
 }
 
 @media screen and (min-width: 769px) {
+  .bride-groom__img-wrapper {
+    max-width: 450px;
+  }
   .bride-groom {
     padding-bottom: 0;
   }
