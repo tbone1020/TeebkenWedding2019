@@ -1,40 +1,58 @@
 import { Component, OnInit } from '@angular/core';
+import { TodaysDateService } from './services/todays-date.service';
+import { WeddingDateService } from './services/wedding-date.service';
+
 
 @Component({
   selector: 'app-countdown',
   templateUrl: './countdown.component.html',
-  styleUrls: ['./countdown.component.css']
+  styleUrls: ['./countdown.component.css'],
+  providers: [TodaysDateService, WeddingDateService]
 })
 export class CountdownComponent implements OnInit {
 
-  private weddingDate: Date = new Date("May, 26, 2019");
-  private todaysDate: Date = new Date();
+  public daysTillWedding: number;
+  public hoursTillWedding: number;
+  public minutesTillWedding: number;
+  public secondsTillWedding: number;
 
-  constructor() {}
+  constructor(private todaysDate: TodaysDateService, private weddingDate: WeddingDateService) {
+  }
 
   ngOnInit() {
-    this.setMonthsTillWedding();
+    this.startClockTick();
+  }
+
+  startClockTick(): void {
+    const clockTick = setInterval(() => {
+      this.setSecondsTillWedding();
+      this.setMinutesTillWedding();
+      this.setHoursTillWedding();
+      this.setDaysTillWedding();
+      this.fineTuneTimes();
+    }, 1000);
+  }
+
+  setSecondsTillWedding(): void {
+    this.secondsTillWedding = Math.floor((this.weddingDate.getWeddingTime() - this.todaysDate.getCurrentTime()) / 1000);
+  }
+
+  setMinutesTillWedding(): void {
+    this.minutesTillWedding = Math.floor(this.secondsTillWedding / 60);
   }
   
-  setMonthsTillWedding(): void {
-    console.log(`Today's date ${this.todaysDate.getMonth() + 1}`);
-    console.log(`Wedding's date ${this.weddingDate.getMonth() + 1}`);
+  setHoursTillWedding(): void {
+    this.hoursTillWedding = Math.floor(this.minutesTillWedding / 60);
   }
 
-  setDaysTillWedding(): any {
-
-  }
-  
-  setHoursTillWedding(): any {
-
+  setDaysTillWedding(): void {
+    this.daysTillWedding = Math.floor(this.hoursTillWedding / 24);
   }
 
-  setMinutesTillWedding(): any {
-
-  }
-
-  setSecondsTillWedding(): any {
-
+  fineTuneTimes(): void {
+    this.hoursTillWedding = this.hoursTillWedding - (this.daysTillWedding * 24);
+    this.minutesTillWedding = this.minutesTillWedding - (this.daysTillWedding * 24 * 60) - (this.hoursTillWedding * 60);
+    this.secondsTillWedding = this.secondsTillWedding - (this.daysTillWedding * 24 * 60 * 60) - (this.hoursTillWedding * 60 * 60) - (this.minutesTillWedding * 60);
   }
 
 }
