@@ -16,17 +16,20 @@
 .countdown__time {
   font-family: 'LOVES';
   letter-spacing: -6px;
-  font-size: 80px;
+  font-size: 60px;
 }
 .countdown__unit {
-  font-size: 26px;
+  font-size: 20px;
 }
 .countdown__time-wrapper {
   align-self: center;
   text-align: center;
 }
 @media screen and (min-width: 769px) {
-  .countdown {
-
+  .countdown__time {
+    font-size: 80px;
+  }
+  .countdown__unit {
+    font-size: 26px;
   }
 }

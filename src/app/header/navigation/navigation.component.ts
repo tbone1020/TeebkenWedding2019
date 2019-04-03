@@ -10,6 +10,16 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  scrollSectionIntoView(target: HTMLElement): void {
+    console.log(target);
+    // $target.scrollIntoView({
+    //   behavior: "smooth", 
+    //   block: "start", 
+    //   inline: "nearest"
+    // });
   }
 
 }

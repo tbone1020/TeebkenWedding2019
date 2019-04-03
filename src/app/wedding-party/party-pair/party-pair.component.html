@@ -1,0 +1,40 @@
+<!-- <section class="wedding-party__group wedding-party__group--{{ i }}" *ngFor="let party of weddingParty; let i = index">
+  <article class="wedding-party__bride">
+    <figure class="wedding-party__headshot">
+      <img src="/assets/images/{{ party.brideSide.image }}" alt="{{ party.brideSide.name }}" class="wedding-party__img">
+    </figure>
+    <figcaption class="wedding-party__member-info">
+      <h2 class="wedding-party__name">{{ party.brideSide.name }}</h2>
+      <h3 class="wedding-party__position">{{ party.brideSide.position }}</h3>
+    </figcaption>
+  </article>
+  <article class="wedding-party__groom wedding-party__groom--left-border">
+    <figure class="wedding-party__headshot">
+      <img src="/assets/images/{{ party.groomsSide.image }}" alt="{{ party.groomsSide.name }}" class="wedding-party__img">
+    </figure>
+    <figcaption class="wedding-party__member-info">
+      <h2 class="wedding-party__name">{{ party.groomsSide.name }}</h2>
+      <h3 class="wedding-party__position">{{ party.groomsSide.position }}</h3>
+    </figcaption>
+  </article>
+</section> -->
+<section class="wedding-party__group">
+  <article class="wedding-party__bride">
+    <figure class="wedding-party__headshot">
+      <img src="/assets/images/{{ weddingParty[currentPartyPair].brideSide.image }}" alt="{{ weddingParty[currentPartyPair].brideSide.name }}" class="wedding-party__img">
+    </figure>
+    <figcaption class="wedding-party__member-info">
+      <h2 class="wedding-party__name">{{ weddingParty[currentPartyPair].brideSide.name }}</h2>
+      <h3 class="wedding-party__position">{{ weddingParty[currentPartyPair].brideSide.position }}</h3>
+    </figcaption>
+  </article>
+  <article class="wedding-party__groom wedding-party__groom--left-border">
+    <figure class="wedding-party__headshot">
+      <img src="/assets/images/{{ weddingParty[currentPartyPair].groomsSide.image }}" alt="{{ weddingParty[currentPartyPair].groomsSide.name }}" class="wedding-party__img">
+    </figure>
+    <figcaption class="wedding-party__member-info">
+      <h2 class="wedding-party__name">{{ weddingParty[currentPartyPair].groomsSide.name }}</h2>
+      <h3 class="wedding-party__position">{{ weddingParty[currentPartyPair].groomsSide.position }}</h3>
+    </figcaption>
+  </article>
+</section>
