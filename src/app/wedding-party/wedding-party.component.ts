@@ -10,6 +10,7 @@ export class WeddingPartyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

@@ -19,6 +19,7 @@ import { RegistryComponent } from './registry/registry.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactDetailsComponent } from './footer/contact-details/contact-details.component';
 import { FooterImageComponent } from './footer/footer-image/footer-image.component';
+import { PartyPairComponent } from './wedding-party/party-pair/party-pair.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { FooterImageComponent } from './footer/footer-image/footer-image.compone
     RegistryComponent,
     FooterComponent,
     ContactDetailsComponent,
-    FooterImageComponent
+    FooterImageComponent,
+    PartyPairComponent
   ],
   imports: [
     BrowserModule
