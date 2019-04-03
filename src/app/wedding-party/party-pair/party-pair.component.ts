@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PartyPairComponent implements OnInit {
 
-
+  currentPartyCouple: number = 0;
+  nextPartyCouple = this.currentPartyCouple + 1;
   weddingParty: object[] = [{
     groomsSide: {
       image: "garrett.png",
@@ -52,12 +53,28 @@ export class PartyPairComponent implements OnInit {
       position: "Bridesmaid"
     }
   }];
-  
-  currentPartyPair: number = 0;
+  partyLength: number = this.weddingParty.length - 1;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  showNextPartyCouple(): void {
+    if ((this.currentPartyCouple + 1) > this.partyLength) {
+      this.currentPartyCouple = 0;
+    } else {
+      this.currentPartyCouple += 1;
+    }
+  }
+  showPreviousPartyCouple(): void {
+
+    if ((this.currentPartyCouple - 1) < 0) {
+      this.currentPartyCouple = this.partyLength;
+    } else {
+      this.currentPartyCouple -= 1;
+    }
   }
 
 }
