@@ -19,6 +19,7 @@ export class PartyPairComponent implements OnInit {
       image: "france.png", 
       name: "Frances Rubio", 
       position: "Maid Of Honor"
+    }
   }, {
     groomsSide: {
       image: "tanner.png", 
