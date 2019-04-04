@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { RegistryComponent } from '../../registry/registry.component';
 
 @Component({
   selector: 'app-navigation',
@@ -10,12 +11,10 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
 
-  scrollSectionIntoView(target: HTMLElement): void {
-    console.log(target);
-    // $target.scrollIntoView({
+  scrollSectionIntoView($target: HTMLElement): void {
+    // target.scrollIntoView({
     //   behavior: "smooth", 
     //   block: "start", 
     //   inline: "nearest"

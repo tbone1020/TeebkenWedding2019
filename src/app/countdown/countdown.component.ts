@@ -17,6 +17,7 @@ export class CountdownComponent implements OnInit {
   public secondsTillWedding: number;
 
   constructor(private todaysDate: TodaysDateService, private weddingDate: WeddingDateService) {
+    
   }
 
   ngOnInit() {
