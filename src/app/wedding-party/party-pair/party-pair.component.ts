@@ -9,7 +9,7 @@ export class PartyPairComponent implements OnInit {
 
   currentPartyCouple: number = 0;
   nextPartyCouple = this.currentPartyCouple + 1;
-  weddingParty: object[] = [{
+  weddingParty: any[] = [{
     groomsSide: {
       image: "garrett.png",
       name: "Garrett Hickman",
