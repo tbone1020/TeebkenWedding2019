@@ -18,7 +18,9 @@
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
+.footer__image-liner {
+  display: inline-block;
+}
 .footer__image-text--show-desktop {
   display: none;
 }
